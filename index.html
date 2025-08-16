@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>PharmaShield</title>
+   <link rel="stylesheet" href="./style.css">
+   <script src="https://kit.fontawesome.com/db69138785.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <header>
+      <nav class="navbar" role="navigation" aria-label="Main Navigation">
+         <div class="navbar__container">
+            <a href="#home" id="navbar-logo">
+                  <img src="./Image/logo.png" alt="PharmaShield Logo" class="logo-image">
+                  <span class="logo-text">PharmaShield</span>
+                  </a>
+               <ul class="navbar__menu">
+                  <li class="navbar__item">
+                     <a href="#home" class="navbar__links">Home</a>
+                  </li>
+                  <li class="navbar__item">
+                     <a href="#about" class="navbar__links">About</a>
+                  </li>
+                  <li class="navbar__item">
+                     <a href="#contact" class="navbar__links">Contact Us</a>
+                  </li>
+                  <li class="navbar__btn mobile">
+                     <a href="./authentication.html" class="button">Sign Up</a>
+                  </li>
+               </ul>
+
+            <div class="navbar__btn desktop">
+               <a href="./authentication.html" class="button">Sign Up</a>
+            </div>   
+
+            <button 
+               class="navbar__toggle" 
+               id="mobile-menu" 
+               aria-label="Toggle Navigation" 
+               aria-expanded=""
+               false
+               >
+               <i class="fa-solid fa-bars"></i>
+            </button>
+         </div>
+      </nav>
+   </header>
+
+    <main>
+      <section class="hero" id="home">
+         <div class="hero__container">
+            <div class="hero__content">
+               <h1>PharmaShield</h1>
+               <p>Shielding Your Well-being, One Scan at a Time.</p>
+               <a href="./authentication.html">
+               <a href="PharmaShield-release.apk" download>
+               <button class="hero__btn">Download Here</button>
+               </a>
+
+            </div>
+            <div class="hero__image">
+               <img
+               id = "hero-img" 
+               src="./Image/hero1.png"
+               alt="Illustration Of The App">
+            </div>
+         </div>
+      </section>
+
+      <section class="About-section" id="about">
+         <div class ="container">
+            <h2>About Us</h2>
+            <p class="intro-text">
+               PharmaShield is a blockchain-based platform to track the lifecycle of prescription drugs from manufacturing to distribution to retail ensuring transparency and authenticity.
+            </p>
+            <div class="features-grid">
+               <div class="features-item">
+                  <i class="fa-solid fa-shield-virus icon"></i>
+                  <h3>Protecting Lives Through Authentic Medication</h3>
+                  <p>PharmaShield believes everyone deserves access to safe, genuine medicine. Using blockchain and QR code technology, we track each drug's journey from manufacturer to consumer—helping eliminate counterfeit medications and protect patient health.</p>
+               </div>
+               <div class="features-grid">
+               <div class="features-item">
+                  <i class="fa-solid fa-qrcode icon"></i>
+                  <h3>Empowering Trust with Every Scan</h3>
+                  <p>With just one scan, users—whether patients or providers—can instantly verify a medication’s authenticity. PharmaShield promotes transparency, trust, and safety across the entire pharmaceutical supply chain.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <footer id="contact">
+         <div class="footer__container">
+            <div class="footer__links">
+               <div class="footer__link-wrapper">
+                   <div class="footer__link-items">
+                     <h2>Location</h2>
+                     <a href="https://www.google.com/maps?q=Digos+City,+Davao+del+Sur,+Philippines" target="_blank">View Location</a>
+                  </div>
+
+                  <div class="footer__link-items">
+                     <h2>Contact Us</h2>
+                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pharmashield6@gmail.com&su=Question&body=Hi%2C%20I%20want%20to%20ask%20about..." target="_blank">Email</a>
+                     <a href="sms:+639123456789">Phone</a>
+                  </div>
+               </div>
+               <div class="footer__link-wrapper">
+                  <div class="footer__link-items">
+                     <h2>Quick Links</h2>
+                     <a href="/">About Us</a>
+                     <a href="/">How It Works</a>
+                     <a href="/">Privacy Policy</a>
+                     <a href="/">Terms of Service</a>
+                  </div>
+               
+                  <div class="footer__link-items">
+                     <h2>Social Media</h2>
+                     <a 
+                     href="http://www.instagram.com"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     >Instagram</a>
+
+                     <a 
+                     href="http://www.instagram.com"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     >Facebook</a>
+
+                     <a 
+                     href="http://www.instagram.com"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     >LinkedIn</a>
+
+                     <a 
+                     href="http://www.instagram.com"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     >Twitter</a>
+                  </div>
+               </div>
+            </div>
+         <section class="social__media">
+            <div class="social__media-wrap">
+               <div class="footer__logo">
+                  <a href="/" id="footer-logo">PharmaShield</a>
+               </div>
+               <p class="website__rights">
+                  © PharmaShield <span id="year"></span> All rights reserved
+               </p>
+               <div class="social__icons">
+
+                  <a href="http://www.Instagram.com" 
+                  class="social__icon-link" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="Facebook"
+                  ><i class="fa-brands fa-instagram"></i></a>
+
+                  <a href="http://www.Facebook.com" 
+                  class="social__icon-link" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="Facebook"
+                  ><i class="fa-brands fa-facebook"></i></a>
+
+                  <a href="http://www.linkedin.com" 
+                  class="social__icon-link" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="Facebook"
+                  ><i class="fa-brands fa-linkedin"></i></a>
+
+                  <a href="http://www.Twitter.com" 
+                  class="social__icon-link" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="Facebook"
+                  ><i class="fa-brands fa-x-twitter"></i></i></a>
+               </div>
+            </div>
+         </section>
+
+      </footer>
+    </main>
+
+   <script src="./app.js"></script>
+</body>
+</html>

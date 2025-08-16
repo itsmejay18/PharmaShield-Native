@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./authentication.css" />
+    <title>Authentication Page</title>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-header">
+            <h1>Welcome Back</h1>
+            <p>Sign in to access your account</p>
+        </div>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+            </div>
+            
+            <div class="form-options">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" style="accent-color: #009615;">
+                    <label for="remember">Remember me</label>
+                </div>
+                <div class="forgot-password">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </div>
+            
+            <button type="submit" class="login-btn">Log In</button>
+        </form>
+        
+       <div class="auth-link">
+            Don't have an account? <a href="#" onclick="toggleForms()">Sign up</a>
+        </div>
+    </div>
+
+    <div class="auth-container" style="display: none;">
+        <div class="auth-header">
+            <h1>Create Account</h1>
+            <p>Enter your details to get started</p>
+        </div>
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email-signup">Email</label>
+                <input type="email" id="email-signup" class="form-control" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password-signup">Password</label>
+                <input type="password" id="password-signup" class="form-control" placeholder="Create a password" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" class="form-control" placeholder="Confirm your password" required>
+            </div>
+            
+            <div class="form-options">
+                <div class="remember-me">
+                    <input type="checkbox" id="terms" required style="accent-color: #009615;">
+                    <label for="terms">I agree to the <a href="#" style="color: #009615; text-decoration: underline;">Terms & Conditions</a></label>
+                </div>
+            </div>
+            
+            <button type="submit" class="signup-btn">Sign Up</button>
+        </form>
+        
+        <div class="signup-link">
+            Already have an account? <a href="#" onclick="toggleForms()">Log in</a>
+        </div>
+    </div>
+     <script>
+        function toggleForms() {
+            const loginForm = document.getElementById('login-form').parentElement;
+            const signupForm = document.getElementById('signup-form').parentElement;
+            
+            if (loginForm.style.display === 'none') {
+                loginForm.style.display = 'block';
+                signupForm.style.display = 'none';
+            } else {
+                loginForm.style.display = 'none';
+                signupForm.style.display = 'block';
+            }
+        }
+        document.getElementById('show-signup').addEventListener('click', toggleForms);
+        document.getElementById('show-login').addEventListener('click', toggleForms);
+    </script>
+</body>
+</html>
